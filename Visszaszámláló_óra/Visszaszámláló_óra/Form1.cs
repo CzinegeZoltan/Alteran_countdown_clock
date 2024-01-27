@@ -19,7 +19,6 @@ namespace Visszaszámláló_óra
         private WaveOutEvent startSoundPlayer;
         private WaveOutEvent stopSoundPlayer;
         private WaveOutEvent one_minSoundPlayer;
-       // string rsza = "ajhdailjfkhjdhhfjhgajhdjhdfiutewzbgjvsjdkfhauwghzmhgvdhrhdrzjeaogwifdjhdvbsaa", rsz1 = "kdernahkdizbepourmzlavtlmaqmrtgacrpnrtkbehzkqzohagoprtnogthkoaevsdfthuzwamitl", rsz2= "Ezegyveletlenszeruszoveghogyvaltozzonaszovegalabelbanfsjteudlsgdfszrbhsofwzfi";
 
         public Form1()
         {
@@ -130,11 +129,7 @@ namespace Visszaszámláló_óra
                     one_minSoundPlayer.Play(); // Játszd le a stop hangot a perc végén
                     one_minSoundPlayer = new WaveOutEvent();
                     one_minSoundPlayer.Init(new BlockAlignReductionStream(WaveFormatConversionStream.CreatePcmStream(new Mp3FileReader(@"timer-one_min.mp3"))));
-
-                    // Ellenőrizd az óra értékét és jelenítsd meg a Random_szoveg_1 és Random_szoveg_2 címkéket
-
                 }
-
 
                 // Ellenőrizd, hogy a visszaszámlálás véget ért-e
                 if (isCountdownFinished && totalMilliseconds <= 0)
@@ -147,18 +142,9 @@ namespace Visszaszámláló_óra
                     stopSoundPlayer.Play();
                 }
             };
-           /* if (second == second - 1)
-            {
-                if (Random_szoveg_1.Text == rsza)
-                { Random_szoveg_1.Text = rsz1; }
-                else if (Random_szoveg_1.Text == rsz1)
-                { Random_szoveg_1.Text = rsz2; }*/
-            }
 
             // Játszd le a start hangot
             startSoundPlayer.Play();
-
-
             countdownTimer.Start(); // Indítsd el az időzítőt
             hourTextBox.Visible = false;
             minuteTextBox.Visible = false;
@@ -188,7 +174,6 @@ namespace Visszaszámláló_óra
             label1.Visible = true;//kis szöveg láthatósága
             Random_szoveg_1.Visible = false;//felső random angol abc-s szöveg láthatósága 77 karakter
             Random_szoveg_2.Visible = false;//alsó random angol abc-s szöveg láthatósága 77 karakter
-
             isMinuteReached = false;
             isCountdownFinished = false;
         }
