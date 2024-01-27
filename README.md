@@ -2,7 +2,7 @@
 
 **HUN**
 
-Ez egy alterai visszasámláló óra ami a Stargate Universe című sorozatban a Végzet nevű hajó visszaszámláló óráját szimulálja. amenjiben nem akarja a beűtípust telepíteni valamo okból (PL.: nem tudja elólvasni) akkor ajánlom telepítse a másikat.
+Ez egy alterai visszasámláló óra ami a Stargate Universe című sorozatban a Végzet nevű hajó visszaszámláló óráját szimulálja. Amenjiben nem akarja a beűtípust telepíteni valamo okból (PL.: nem tudja elólvasni), akkor ajánlom telepítse a másikat.
 
 A betűtípust a Csillagkapú a Csillagkapú Atlantisz a Stargate Univese című sorozatokban és a Csillagkapú Az igasság ládája című filmben használta az Alteraiak és leszármazzotaik "anquietas.ttf".
 
